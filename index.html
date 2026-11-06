@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo IV Semana da Psicologia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Poppins:wght@400;500;600;700&display=swap">
+<style>body{margin:0}
+:root{--fundo:#EEE1CE;--vinho:#6B1F2A;--preto:#1D1B1A;--muted:#59514A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#2E2826;color-scheme:light;font-family:"Poppins",sans-serif;color:var(--preto);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{position:relative;width:148mm;height:210mm;overflow:hidden;background:var(--fundo);page-break-after:always;padding:16mm 13mm 18mm}
+.page::before{display:none;content:"";position:absolute;inset:0;opacity:.35;mix-blend-mode:multiply;pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .55  0 0 0 0 .45  0 0 0 0 .35  0 0 0 .25 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.frame{position:absolute;inset:5mm;border:.5mm solid var(--vinho);pointer-events:none}
+.frame::after{content:"";position:absolute;inset:1.4mm;border:.25mm solid var(--vinho);opacity:.55}
+.pfoot{position:absolute;left:13mm;right:13mm;bottom:9.5mm;display:flex;justify-content:space-between;font-size:6.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+.eyebrow{font-size:8.5pt;letter-spacing:.01em}
+.eyebrow b{font-weight:500}
+.rule{position:relative;width:62mm;height:.45mm;background:var(--vinho);margin:6mm 0}
+.rule::after{content:"";position:absolute;right:0;top:-1.6mm;width:.45mm;height:3.6mm;background:var(--vinho)}
+.rule.short{width:40mm;margin:4.5mm 0}
+.rule.center{margin:7mm auto}
+em{font-style:italic;color:var(--vinho)}
+
+/* capa */
+.cover-face{position:absolute;right:12mm;top:24mm;height:100mm}
+.cover-top{position:relative}
+.cover-kind{margin-top:3mm;font-size:7.5pt;font-weight:700;letter-spacing:.22em;color:var(--vinho)}
+.cover-mid{position:absolute;left:13mm;top:122mm;width:120mm}
+h1{font-family:"Lora",serif;font-weight:400;font-size:27pt;line-height:1.05;letter-spacing:-.01em}
+.cover-date{font-size:11.5pt;font-weight:500;color:var(--vinho)}
+.cover-date.sm{font-size:10pt;margin-top:2mm}
+.brand{position:absolute;left:13mm;bottom:15mm;display:flex;align-items:center;gap:4mm}
+.brand img{width:15mm;height:15mm;border-radius:50%;mix-blend-mode:multiply}
+.brand .n{font-size:9pt;font-weight:700;letter-spacing:.04em}
+.brand .s{font-size:6.5pt;font-weight:500;letter-spacing:.18em;color:var(--vinho);margin-top:.5mm}
+.brand.center{left:0;right:0;justify-content:center}
+
+/* texto */
+.head{display:flex;justify-content:space-between;align-items:baseline}
+.hdate{font-size:7pt;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--vinho)}
+h2{font-family:"Lora",serif;font-weight:400;font-size:30pt;line-height:1;color:var(--vinho);margin-top:7mm;text-transform:uppercase;letter-spacing:.01em}
+.lead{font-family:"Lora",serif;font-size:12.5pt;line-height:1.4;margin-bottom:5mm}
+.body{font-size:8.6pt;line-height:1.65;margin-bottom:3.5mm}
+.script{font-family:"Lora",serif;font-style:italic;font-size:15pt;color:var(--vinho);margin-top:9mm}
+.script.big{font-size:22pt;line-height:1.25;margin:0}
+
+/* programação */
+.day{margin-bottom:4.2mm}
+.day .k{font-size:6.8pt;font-weight:700;letter-spacing:.14em;color:var(--vinho)}
+.day .v{font-family:"Lora",serif;font-size:14pt;margin-top:.6mm}
+.prog{list-style:none;counter-reset:n;margin-top:2mm}
+.prog li{counter-increment:n;display:flex;gap:3mm;align-items:baseline;font-size:7.6pt;line-height:1.35;padding:1.25mm 0;border-bottom:.2mm solid rgba(107,31,42,.22)}
+.prog li::before{content:counter(n);width:4mm;flex:none;font-weight:600;color:var(--vinho)}
+.prog .t{flex:1}
+.prog .r{flex:none;font-size:6.6pt;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--vinho)}
+
+/* divisória */
+.divider{background:var(--vinho)}
+.divider::before{opacity:.25}
+.divider .frame{border-color:#EFE5D6}
+.divider .frame::after{border-color:#EFE5D6}
+.divider .pfoot{color:#D9C7B8}
+.div-face{position:absolute;right:-8mm;bottom:12mm;height:120mm;opacity:.16;filter:grayscale(1) brightness(2.2)}
+.div-txt{position:absolute;left:13mm;right:13mm;top:62mm;color:#EFE5D6}
+.div-date{font-size:7.5pt;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.div-title{color:#EFE5D6;font-size:30pt;margin-top:4mm;text-transform:none;line-height:1.08}
+.divider .rule,.divider .rule::after{background:#EFE5D6}
+.div-sub{font-size:9pt;line-height:1.5}
+.div-theme{font-family:"Lora",serif;font-style:italic;font-size:13pt;line-height:1.4;margin-top:6mm;max-width:105mm}
+
+/* perfil */
+.arch{width:68mm;height:92mm;margin:7mm auto 0;border-radius:31mm 31mm 0 0;overflow:hidden;outline:.3mm solid var(--vinho);outline-offset:1.3mm}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.profile h3{font-family:"Lora",serif;font-weight:400;font-size:17pt;line-height:1.08;color:var(--vinho);text-transform:uppercase;margin-top:7mm;letter-spacing:.005em}
+.tema{font-family:"Lora",serif;font-size:11.5pt;line-height:1.3;margin-top:2.2mm}
+.bio{font-size:8.6pt;line-height:1.6}
+.info{position:absolute;left:13mm;bottom:16mm;display:flex;gap:7mm}
+.info span{display:flex;align-items:center;gap:1.8mm;font-size:8pt;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--vinho)}
+.info svg{width:4.6mm;height:4.6mm;fill:none;stroke:var(--vinho);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.profile .pfoot{bottom:9.5mm}
+
+/* contracapa */
+.back{position:absolute;left:13mm;right:13mm;top:70mm;text-align:center}
+
+.viewer{display:flex;flex-direction:column;align-items:center;gap:20px;padding-block:24px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.intro{color:#EFE5D6;font-family:"Poppins",sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;text-align:center}
+.slot{width:calc(148mm * var(--s,1));height:calc(210mm * var(--s,1));max-width:100%}
+.slot .page{transform:scale(var(--s,1));transform-origin:top left;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+</style>
+</head>
+<body>
+<main class="viewer">
+<p class="intro">IV Semana da Psicologia — Osasco · Catálogo de participantes</p>
+<div class="slot"><section class="page cover"><div class="frame"></div>
+<img class="cover-face" src="face.jpg" alt="">
+<div class="cover-top">
+  <p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p>
+  <p class="cover-kind">CATÁLOGO DE PARTICIPANTES</p>
+</div>
+<div class="cover-mid">
+  <h1>Nem toda<br>violência deixa<br>marcas <em>visíveis.</em></h1>
+  <div class="rule"></div>
+  <p class="cover-date">11, 12 e 13 de novembro de 2026</p>
+</div>
+<div class="brand"><img src="logo.png" alt=""><div><p class="n">FACULDADE NOVE DE JULHO</p><p class="s">OSASCO · EDIÇÃO 2026.2</p></div></div>
+</section></div><div class="slot"><section class="page "><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p></div>
+<h2>Apresentação</h2>
+<div class="rule"></div>
+<p class="lead">A IV Semana da Psicologia propõe uma reflexão sobre as diferentes expressões da violência, suas repercussões e as possibilidades de atuação da Psicologia, integrando formação profissional e produção acadêmica dos estudantes.</p>
+<p class="body">O tema central é a violência, incluindo manifestações psicológicas, simbólicas, institucionais e outras formas que podem passar despercebidas. O rosto fragmentado da identidade do evento representa essas múltiplas camadas: aquilo que está ali, mas não se vê à primeira vista.</p>
+<p class="body">Este catálogo reúne as convidadas e os convidados que compartilham conosco sua experiência na clínica, na pesquisa, nas políticas públicas e no sistema de justiça. A elas e a eles, nosso agradecimento.</p>
+<p class="script">Escutar também é uma forma de cuidar.</p>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>2</span></div></section></div><div class="slot"><section class="page prog-page"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p></div>
+<h2>Programação</h2>
+<div class="rule"></div>
+<div class="day"><p class="k">11/11 · QUARTA · 19H30</p><p class="v">Abertura on-line, no YouTube</p></div>
+<div class="day"><p class="k">12/11 · QUINTA · CHECK-IN 19H · PALESTRAS 19H30</p><p class="v">Palestras presenciais</p>
+<ol class="prog"><li><span class="t">Tipos de violência e as consequências no indivíduo.</span><span class="r">Sala 201</span></li><li><span class="t">Esquemas mentais e a criação de crenças que impactam o comportamento do indivíduo.</span><span class="r">Sala 301</span></li><li><span class="t">Ciclo da violência: desafios, limites e intervenções.</span><span class="r">Sala 502</span></li><li><span class="t">Políticas públicas e as rotas de acesso.</span><span class="r">Sala 601</span></li><li><span class="t">Violência de gênero: impactos nos grupos LGBTQIAPN+.</span><span class="r">Lab I</span></li><li><span class="t">Violência na escola: o papel do psicólogo na prevenção e no enfrentamento.</span><span class="r">Sala 702</span></li><li><span class="t">Violência psicológica e relações abusivas: identificação, acolhimento e intervenção.</span><span class="r">Sala 801</span></li><li><span class="t">Violência contra crianças e adolescentes: sinais de alerta, escuta e proteção.</span><span class="r">Sala 802</span></li><li><span class="t">Violência digital e controle nas relações: desafios para a Psicologia contemporânea.</span><span class="r">Sala 901</span></li><li><span class="t">Documentos da(o) psicóloga(o). Atividade para o 10º semestre.</span><span class="r">Sala 701</span></li></ol></div>
+<div class="day"><p class="k">13/11 · SEXTA · 19H30</p><p class="v">Apresentação de trabalhos</p></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>3</span></div></section></div><div class="slot"><section class="page divider"><div class="frame"></div>
+<img class="div-face" src="face-big.png" alt="">
+<div class="div-txt">
+  <p class="div-date">11 de novembro · quarta</p>
+  <h2 class="div-title">Abertura</h2>
+  <div class="rule"></div>
+  <p class="div-sub">On-line, no YouTube · 19h30</p>
+  <p class="div-theme">Psicologia, Direitos Humanos e o Enfrentamento às Violências Contemporâneas.</p>
+</div><div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>4</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">11 de novembro · Abertura</p></div>
+<div class="arch"><img src="fotos/01.jpg" alt="Regina Célia Almeida Silva Barbosa"></div>
+<h3>Regina Célia Almeida Silva Barbosa</h3>
+<p class="tema">Psicologia, Direitos Humanos e o Enfrentamento às Violências Contemporâneas.</p>
+<div class="rule short"></div>
+<p class="bio">Filósofa e mestra em Ciência Política pela UFPE, com 30 anos de docência. Cofundadora e vice-presidente do Instituto Maria da Penha. Atua no enfrentamento à violência contra a mulher e ao racismo.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l5.5-3.5z"/></svg>YouTube</span><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>5</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">11 de novembro · Abertura</p></div>
+<div class="arch"><img src="fotos/02.jpg" alt="Flávio Urra"></div>
+<h3>Flávio Urra</h3>
+<p class="tema">Psicologia, Direitos Humanos e o Enfrentamento às Violências Contemporâneas.</p>
+<div class="rule short"></div>
+<p class="bio">Psicólogo e mestre em Psicologia Social pela PUC-SP. Coordena o Programa E Agora, José?, de educação e responsabilização de homens. Pesquisa masculinidades, gênero e violência contra a mulher.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l5.5-3.5z"/></svg>YouTube</span><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>6</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">11 de novembro · Abertura</p></div>
+<div class="arch"><img src="fotos/03.jpg" alt="Daniela Fontoura"></div>
+<h3>Daniela Fontoura</h3>
+<p class="tema">Psicologia, Direitos Humanos e o Enfrentamento às Violências Contemporâneas.</p>
+<div class="rule short"></div>
+<p class="bio">Psicóloga, mestra e doutoranda em Psicologia Clínica e Cultura pela UnB. Estuda gênero, feminismos e maternidades. Colabora com o projeto Maria da Penha Vai à Escola.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l5.5-3.5z"/></svg>YouTube</span><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>7</span></div></section></div><div class="slot"><section class="page divider"><div class="frame"></div>
+<img class="div-face" src="face-big.png" alt="">
+<div class="div-txt">
+  <p class="div-date">12 de novembro · quinta</p>
+  <h2 class="div-title">Palestras presenciais</h2>
+  <div class="rule"></div>
+  <p class="div-sub">Faculdade Nove de Julho, Osasco · check-in às 19h · palestras às 19h30</p>
+  
+</div><div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>8</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/04.jpg" alt="Thamyres Santos da Cruz"></div>
+<h3>Thamyres Santos da Cruz</h3>
+<p class="tema">Tipos de violência e as consequências no indivíduo.</p>
+<div class="rule short"></div>
+<p class="bio">Psicóloga pela PUC-SP, com 12 anos de experiência com infância e juventude e dez anos na assistência social de São Paulo. Atua em proteção e acolhimento, com suporte técnico ao TJSP e ao MPSP.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Sala 201</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>9</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/05.jpg" alt="Valeska da Silva Bohus"></div>
+<h3>Valeska da Silva Bohus</h3>
+<p class="tema">Esquemas mentais e a criação de crenças que impactam o comportamento do indivíduo.</p>
+<div class="rule short"></div>
+<p class="bio">Neuropsicóloga, pedagoga e professora de Psicologia da Faculdade Nove de Julho, Osasco. Especialista em Neurociências, Neuropsicologia e Terapia Cognitivo-Comportamental.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Sala 301</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>10</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/06.jpg" alt="Patricia Bergantin Soares Paggiaro"></div>
+<h3>Patricia Bergantin Soares Paggiaro</h3>
+<p class="tema">Ciclo da violência: desafios, limites e intervenções.</p>
+<div class="rule short"></div>
+<p class="bio">Doutora em Saúde pela UNG e mestra em Psicologia da Aprendizagem pela UNESP. Atuou 16 anos no Tribunal de Justiça de São Paulo, na Vara da Infância e em perícias na Vara da Família.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Sala 502</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>11</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/07.jpg" alt="Ana Letícia Guedes Pereira"></div>
+<h3>Ana Letícia Guedes Pereira</h3>
+<p class="tema">Políticas públicas e as rotas de acesso.</p>
+<div class="rule short"></div>
+<p class="bio">Psicóloga e mestra em Psicologia Clínica em Família e Comunidade pela PUC-SP. Atuou com crianças e adolescentes. É professora e supervisora de estágio social na Faculdade Nove de Julho, Osasco.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Sala 601</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>12</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/08.jpg" alt="Gabriela de Souza Rodrigues"></div>
+<h3>Gabriela de Souza Rodrigues</h3>
+<p class="tema">Violência de gênero: impactos nos grupos LGBTQIAPN+.</p>
+<div class="rule short"></div>
+<p class="bio">Psicóloga pelo Mackenzie e mestra em Psicologia Social pela USP. Docente da Faculdade Nove de Julho e integrante do grupo FRESTA. Pesquisa Psicanálise, violência de gênero e teorias feministas.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Lab I</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>13</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/09.jpg" alt="Hulda Leia Santana de Almeida"></div>
+<h3>Hulda Leia Santana de Almeida</h3>
+<p class="tema">Violência na escola: o papel do psicólogo na prevenção e no enfrentamento.</p>
+<div class="rule short"></div>
+<p class="bio">Psicóloga especialista em Saúde Mental e em Psicologia Clínica. Atuou seis anos em CAPS Infantojuvenil, no Núcleo de Proteção à Violência e em ações com escolas de Perus.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Sala 702</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>14</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/10.jpg" alt="Cilene Telles"></div>
+<h3>Cilene Telles</h3>
+<p class="tema">Violência psicológica e relações abusivas: identificação, acolhimento e intervenção.</p>
+<div class="rule short"></div>
+<p class="bio">Psicóloga clínica e analista do comportamento. Docente de Psicologia e fundadora da Prompt Psicologia e Desenvolvimento. Atende adolescentes e adultos, em especial mulheres e pessoas neurodivergentes.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Sala 801</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>15</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/11.jpg" alt="Bernadete Brosso"></div>
+<h3>Bernadete Brosso</h3>
+<p class="tema">Violência contra crianças e adolescentes: sinais de alerta, escuta e proteção.</p>
+<div class="rule short"></div>
+<p class="bio">Psicóloga pela FMU desde 1987. Atuou 18 anos na Secretaria Municipal da Saúde de São Paulo. Hoje está na Supervisão Técnica de Saúde de Perus, no acompanhamento de situações de violência.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Sala 802</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>16</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/12.jpg" alt="Renato Villela Gallo"></div>
+<h3>Renato Villela Gallo</h3>
+<p class="tema">Violência digital e controle nas relações: desafios para a Psicologia contemporânea.</p>
+<div class="rule short"></div>
+<p class="bio">Psicólogo clínico e neuropsicólogo, especialista em TCC pela Faculdade de Medicina da USP e em Transtornos do Controle dos Impulsos pelo IPq-HCFMUSP. Pesquisador do grupo de Dependências Tecnológicas do ProAmiti.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Sala 901</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>17</span></div></section></div><div class="slot"><section class="page profile"><div class="frame"></div>
+<div class="head"><p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p><p class="hdate">12 de novembro · Palestras</p></div>
+<div class="arch"><img src="fotos/13.jpg" alt="Caio Vinícius Infante de Melo"></div>
+<h3>Caio Vinícius Infante de Melo</h3>
+<p class="tema">Documentos da(o) psicóloga(o). Atividade para o 10º semestre.</p>
+<div class="rule short"></div>
+<p class="bio">Psicólogo pela UNIFESP e mestre em Ciências pela Faculdade de Medicina da USP. Atuou em saúde mental, assistência social e educação no serviço público. É Especialista Técnico em Psicologia no CREPOP do CRP SP.</p>
+<div class="info"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg>19h30</span><span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Sala 701</span></div>
+<div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>18</span></div></section></div><div class="slot"><section class="page divider"><div class="frame"></div>
+<img class="div-face" src="face-big.png" alt="">
+<div class="div-txt">
+  <p class="div-date">13 de novembro · sexta</p>
+  <h2 class="div-title">Apresentação de trabalhos</h2>
+  <div class="rule"></div>
+  <p class="div-sub">Faculdade Nove de Julho, Osasco · 19h30</p>
+  <p class="div-theme">A produção acadêmica dos estudantes de Psicologia, com prioridade para a temática da violência e abertura a outras contribuições da Psicologia.</p>
+</div><div class="pfoot"><span>IV Semana da Psicologia — Osasco</span><span>19</span></div></section></div><div class="slot"><section class="page backc"><div class="frame"></div>
+<div class="back">
+  <p class="script big">Escutar também é<br>uma forma de cuidar.</p>
+  <div class="rule center"></div>
+  <p class="eyebrow"><b>IV Semana da Psicologia</b> — Osasco</p>
+  <p class="cover-date sm">11, 12 e 13 de novembro de 2026</p>
+</div>
+<div class="brand center"><img src="logo.png" alt=""><div><p class="n">FACULDADE NOVE DE JULHO</p><p class="s">OSASCO</p></div></div>
+</section></div>
+</main>
+<script>
+(function(){var PW=148*96/25.4;function fit(){var w=document.querySelector('.viewer').clientWidth-32;var s=Math.min(1.35,w/PW);document.documentElement.style.setProperty('--s',s.toFixed(4));}
+fit();addEventListener('resize',fit);})();
+</script>
+</body>
+</html>
